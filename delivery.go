@@ -207,14 +207,14 @@ func (d *Delivery) BodyParsed(header textproto.Header, bodyLen int, body Buffer)
 	}
 	flagsStmt, err := d.b.getFlagsAddStmt(true, []string{imap.RecentFlag})
 	if err != nil {
-		return wrapErr(err, "Body")
+		return wrapErr(err, "Body (getFlagsAdd)")
 	}
 
 	date := time.Now()
 
 	d.tx, err = d.b.db.BeginLevel(sql.LevelReadCommitted, false)
 	if err != nil {
-		return wrapErr(err, "Body")
+		return wrapErr(err, "Body (BeginLevel)")
 	}
 
 	for _, mbox := range d.mboxes {
