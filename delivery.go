@@ -234,7 +234,7 @@ func (d *Delivery) BodyParsed(header textproto.Header, bodyLen int, body Buffer)
 		if len(d.flagOverrides[mbox.user.username]) != 0 {
 			_, err := d.b.getFlagsAddStmt(len(d.flagOverrides[mbox.user.username]))
 			if err != nil {
-				return wrapErr(err, "Body")
+				return wrapErr(err, "Body (getFlagsAddStmt)")
 			}
 		}
 	}
@@ -244,7 +244,7 @@ func (d *Delivery) BodyParsed(header textproto.Header, bodyLen int, body Buffer)
 	var err error
 	d.tx, err = d.b.db.BeginLevel(sql.LevelReadCommitted, false)
 	if err != nil {
-		return wrapErr(err, "Body")
+		return wrapErr(err, "Body (BeginLevel9")
 	}
 
 	for _, mbox := range d.mboxes {
@@ -252,7 +252,7 @@ func (d *Delivery) BodyParsed(header textproto.Header, bodyLen int, body Buffer)
 		if len(d.flagOverrides[mbox.user.username]) != 0 {
 			flagsStmt, err = d.b.getFlagsAddStmt(len(d.flagOverrides[mbox.user.username]))
 			if err != nil {
-				return wrapErr(err, "Body")
+				return wrapErr(err, "Body (getFlagsAddStmt)")
 			}
 		}
 
