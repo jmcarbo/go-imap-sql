@@ -1,11 +1,9 @@
 module github.com/jmcarbo/go-imap-sql
 
-go 1.16
-
-replace github.com/emersion/go-imap => github.com/foxcpp/go-imap v1.0.0-beta.1.0.20200802083659-cf943ff91d80
+go 1.15
 
 require (
-	github.com/emersion/go-imap v1.0.5
+	github.com/emersion/go-imap v1.0.6
 	github.com/emersion/go-imap-appendlimit v0.0.0-20190308131241-25671c986a6a
 	github.com/emersion/go-imap-move v0.0.0-20190710073258-6e5a51a5b342
 	github.com/emersion/go-imap-sortthread v1.2.0
