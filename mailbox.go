@@ -16,7 +16,7 @@ import (
 	"github.com/emersion/go-imap/backend"
 	"github.com/emersion/go-imap/backend/backendutil"
 	"github.com/emersion/go-message/textproto"
-	"github.com/foxcpp/go-imap-sql/children"
+	"github.com/jmcarbo/go-imap-sql/children"
 	"github.com/mailru/easyjson/jwriter"
 )
 

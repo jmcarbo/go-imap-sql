@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	eimap "github.com/emersion/go-imap"
-	imapsql "github.com/foxcpp/go-imap-sql"
+	imapsql "github.com/jmcarbo/go-imap-sql"
 	"github.com/urfave/cli"
 )
 
