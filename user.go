@@ -11,7 +11,7 @@ import (
 	specialuse "github.com/emersion/go-imap-specialuse"
 	"github.com/emersion/go-imap/backend"
 	namespace "github.com/foxcpp/go-imap-namespace"
-	"github.com/foxcpp/go-imap-sql/children"
+	"github.com/jmcarbo/go-imap-sql/children"
 )
 
 const MailboxPathSep = "."

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	imapsql "github.com/foxcpp/go-imap-sql"
+	imapsql "github.com/jmcarbo/go-imap-sql"
 	"github.com/urfave/cli"
 )
 

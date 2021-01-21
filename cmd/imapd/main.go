@@ -15,8 +15,8 @@ import (
 	sortthread "github.com/emersion/go-imap-sortthread"
 	specialuse "github.com/emersion/go-imap-specialuse"
 	"github.com/emersion/go-imap/server"
-	imapsql "github.com/foxcpp/go-imap-sql"
-	"github.com/foxcpp/go-imap-sql/children"
+	imapsql "github.com/jmcarbo/go-imap-sql"
+	"github.com/jmcarbo/go-imap-sql/children"
 )
 
 type stdLogger struct{}
