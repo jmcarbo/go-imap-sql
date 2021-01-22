@@ -1,4 +1,4 @@
-module github.com/foxcpp/go-imap-sql
+module github.com/jmcarbo/go-imap-sql
 
 go 1.12
 
